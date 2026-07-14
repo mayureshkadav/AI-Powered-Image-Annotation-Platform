@@ -1,0 +1,45 @@
+{
+    "projectName": "Object-detection",
+    "description": "detection project",
+    "annotationClasses": [
+        {
+            "name": "person",
+            "color": "#FF6B6B"
+        },
+        {
+            "name": "cat",
+            "color": "#4ECDC4"
+        },
+        {
+            "name": "dog",
+            "color": "#45B7D1"
+        },
+        {
+            "name": "bird",
+            "color": "#FED766"
+        },
+        {
+            "name": "car",
+            "color": "#2AB7CA"
+        },
+        {
+            "name": "truck",
+            "color": "#F0C419"
+        }
+    ],
+    "labelMode": "labelMyself",
+    "uploadedFiles": [
+        "1200x0.jpg",
+        "a-crowd-of-people-B1PHY8.jpg",
+        "group-of-pet-dogs-cats-a-rabbit-and-bird-against-white-background-CPFGGK.jpg",
+        "pexels-jopwell-2422290.jpg",
+        "R.jpg",
+        "Screenshot 2025-09-06 104703.png",
+        "Screenshot 2025-09-06 104801.png",
+        "Screenshot 2025-09-06 104823.png"
+    ],
+    "createdAt": "2025-09-17T10:24:45.875684",
+    "imageCount": 8,
+    "projectDirectory": "C:\\Users\\Intern16\\Desktop\\data\\Ai tool for 1st review\\Ai tool for 1st review\\backend\\uploads\\Object-detection",
+    "status": "active"
+}

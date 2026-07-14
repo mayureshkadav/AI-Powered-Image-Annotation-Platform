@@ -1,0 +1,144 @@
+.assign-container {
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.assign-container h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.assign-top label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.slider-container input[type="range"] {
+  flex: 1;
+}
+
+.slider-container input[type="text"] {
+  width: 40px;
+  padding: 4px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.assign-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.outline-btn {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #181616;
+  background-color: rgb(88, 80, 80);
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.outline-btn:hover {
+  background-color: #5a5353;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.email-avatar {
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #888;
+}
+
+.name {
+  flex: 1;
+  font-size: 14px;
+}
+
+.image-count {
+  font-size: 13px;
+  color: #888;
+}
+
+.invited-label {
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.start-btn {
+  padding: 10px 20px;
+  border: none;
+  background-color: black;
+  color: rgb(26, 23, 23);
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.start-btn:hover {
+  opacity: 0.9;
+}

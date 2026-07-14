@@ -1,0 +1,80 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Sidebar from '../components/Sidebar';
+
+const Home = () => {
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    window.location.href = '/login';
+  };
+
+
+  return (
+    <div style={{ textAlign: 'center', paddingTop: '100px' }}>
+      <h1>Welcome to the Home Page</h1>
+      <p>You are logged in.</p>
+
+      <div style={{ marginTop: '20px' }}>
+        <Link to="/About" style={{ marginRight: '15px' }}>Go  to about</Link>
+        <Link to="/contact">Go to Page B</Link>
+      </div>
+
+      <div style={{ marginTop: '40px' }}>
+        <button onClick={handleLogout}>Logout</button>
+      </div>
+
+
+      <div style={{ display: 'flex', backgroundColor: '#f3f4f6', minHeight: '100vh' }}>
+        <Sidebar />
+
+        <main style={{ flex: 1, padding: '24px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '24px' }}>
+            <h1 style={{ fontSize: '24px', fontWeight: 'bold' }}>Projects</h1>
+            <div style={{ display: 'flex', gap: '12px' }}>
+              <button>Invite Team</button>
+              <button style={{ backgroundColor: '#374151', color: 'white', padding: '8px 12px', borderRadius: '6px' }}>+ New Project</button>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Search projects"
+            style={{
+              padding: '10px',
+              border: '1px solid #ccc',
+              borderRadius: '6px',
+              marginBottom: '24px',
+              width: '300px',
+            }}
+          />
+
+          <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                style={{
+                  background: 'white',
+                  padding: '16px',
+                  borderRadius: '8px',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+                  width: '240px',
+                }}
+              >
+                <div style={{ background: '#d1d5db', height: '120px', marginBottom: '12px' }} />
+                <h2 style={{ fontWeight: 'bold' }}>{project.name}</h2>
+                <p style={{ color: '#6b7280', fontSize: '14px' }}>Edited {project.edited}</p>
+                <div style={{ marginTop: '10px', fontSize: '14px', color: '#4b5563' }}>
+                  <p>{project.images} Images</p>
+                  <p>{project.classes} Classes</p>
+                  <p>{project.models} Models</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
