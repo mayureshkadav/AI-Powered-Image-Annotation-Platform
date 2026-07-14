@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "rootDirectory": "ai-tool",
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "installCommand": "cd ai-tool && npm install",
+  "buildCommand": "cd ai-tool && npm run build",
+  "outputDirectory": "ai-tool/dist"
 }
